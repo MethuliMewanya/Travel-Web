@@ -1,0 +1,127 @@
+/* General*/
+:root{
+    --bg-color:white;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:#6e54fa;
+    --big-font:4rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* Header*/
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .title h1 {
+    font-size: var(--big-font);
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.header .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Section */
+.description {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.description p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Home Page Button */
+.home-page {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.home-page .home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #0c7988;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-page .home-btn:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0c7988;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .header .title h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1em;
+    }
+
+    .home-page .home-btn {
+        font-size: 1em;
+    }
+}
+
+/* For mobile devices (max-width: 575px) */
+@media (max-width: 575px) {
+    .header .title h1 {
+        font-size: 1.8em;
+    }
+
+    .description {
+        padding: 20px 10px;
+    }
+
+    .description p {
+        font-size: 0.9em;
+    }
+
+    .home-page .home-btn {
+        font-size: 0.9em;
+    }
+}
